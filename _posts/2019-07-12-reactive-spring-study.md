@@ -28,13 +28,17 @@ category: blog
   ![asyc-nonblocking](/hbueluojing.github.io/images/githubpages/async-nonblocking.png "异步非阻塞")
 
 ## How to use Reactive with Spring?
+
 ### Flux 和 Mono
     Flux 和 Mono 是 Reactor 中的两个基本概念。
+    
 #### Flux 
     表示的是包含 0 到 N 个元素的异步序列。在该序列中可以包含三种不同类型的消息通知：正常的包含元素的消息、序列结束的消息和序列出错的消息。
     当消息通知产生时，订阅者中对应的方法 onNext(), onComplete()和 onError()会被调用。
+
 #### Mono 
     表示的是包含 0 或者 1 个元素的异步序列。该序列中同样可以包含与 Flux 相同的三种类型的消息通知。
+
 
 ```
 public class JokeService {
