@@ -27,8 +27,8 @@ Mono
 ***
 Flux
 ***
-```access transformers
-@Service
+
+```
 public class JokeService {
 	private static final String BASE = "http://api.icndb.com/jokes/random?limitTo=nerdy";
 	private RestTemplate restTemplate;
@@ -57,6 +57,7 @@ public class JokeService {
 				.map(jokeResponse -> jokeResponse.getValue().getJoke());
 	}
 }
+
 ```
 
 
