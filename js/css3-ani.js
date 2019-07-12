@@ -1,47 +1,47 @@
-$(function(){
+$(function () {
 
-    $('#cardflip').click(function(){
+    $('#cardflip').click(function () {
         $('#card1').toggleClass('flipped')
     });
 
-    $('body').delegate('#cardflip1','click',function(){
+    $('body').delegate('#cardflip1', 'click', function () {
         $('#card2').toggleClass('flipped')
     });
 
-    $('body').delegate('#cube-btn button','click',function(){
+    $('body').delegate('#cube-btn button', 'click', function () {
         var cls = $(this).attr('data-class');
         $('#cube').removeClass();
         $('#cube').addClass(cls);
     });
 
-    $('#car-pre').click(function(){
+    $('#car-pre').click(function () {
         var deg = $('#carousel').attr('data-deg') || 0;
-        deg = parseInt(deg)+40;
+        deg = parseInt(deg) + 40;
 
-        var value = 'translateZ(-288px) rotateY('+deg+'deg)';
+        var value = 'translateZ(-288px) rotateY(' + deg + 'deg)';
 
         $('#carousel')
-            .attr('data-deg',deg)
+            .attr('data-deg', deg)
             .css({
-                '-webkit-transform':value
-                ,'-moz-transform':value
-                ,'-o-transform':value
-                ,'transform':value
+                '-webkit-transform': value
+                , '-moz-transform': value
+                , '-o-transform': value
+                , 'transform': value
             });
     });
-    $('#car-next').click(function(){
+    $('#car-next').click(function () {
         var deg = $('#carousel').attr('data-deg') || 0;
-        deg = parseInt(deg)-40;
+        deg = parseInt(deg) - 40;
 
-        var value = 'translateZ(-288px) rotateY('+deg+'deg)';
+        var value = 'translateZ(-288px) rotateY(' + deg + 'deg)';
 
         $('#carousel')
-            .attr('data-deg',deg)
+            .attr('data-deg', deg)
             .css({
-                '-webkit-transform':value
-                ,'-moz-transform':value
-                ,'-o-transform':value
-                ,'transform':value
+                '-webkit-transform': value
+                , '-moz-transform': value
+                , '-o-transform': value
+                , 'transform': value
             });
     });
 });
