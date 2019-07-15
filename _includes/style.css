@@ -169,7 +169,7 @@ a:hover {
 
 a.external {
     padding-right: 13px;
-    background: url("/images/icons.gif") no-repeat right 1px;
+    background: url("/hbueluojing.github.io/images/icons.gif") no-repeat right 1px;
 }
 
 a.external:hover {
@@ -345,13 +345,6 @@ a.external:hover {
     margin-bottom: 25px;
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
-}
-
-@media $mobiel {
-
-    .post-wrapper h2 {
-        font-size: 20px;
-    }
 }
 
 .post-wrapper h3 {
